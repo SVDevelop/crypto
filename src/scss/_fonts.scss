@@ -1,0 +1,9 @@
+// @include font-face("Muller", "../fonts/MullerRegular", 400, normal);
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Spartan:wght@700&display=swap');
+
+@include font-face("RobotoL", "../fonts/Roboto-Light.ttf", 300, normal);
+@include font-face("RobotoM", "../fonts/Roboto-Medium.ttf", 500, normal);
+@include font-face("RobotoR", "../fonts/Roboto-Regular.ttf", 400, normal);
+@include font-face("RobotoB", "../fonts/Roboto-Bold.ttf", 700, bold);
+
+@include font-face("Spartan", "../fonts/Spartan-VariableFont_wght.ttf", 700, bold);
