@@ -21,8 +21,8 @@ modals.forEach(modal =>
     }
     if (e.target.dataset.next) {
       closeBtns();
-      
-      openModal(document.querySelector(`.auth#modal${e.target.dataset.next}`))
+
+      openModal(document.querySelector(`.auth#modal${e.target.dataset.next}`));
     }
   })
 );
@@ -33,32 +33,3 @@ document
 document
   .querySelector(".main__btn")
   .addEventListener("click", () => openModal(modal1));
-
-document.addEventListener("DOMContentLoaded", () => {
-  const phoneInputs = document.querySelectorAll("input[type='tel']");
-  const getNumbersValue = input => input.value.replace(/\D/g, "");
-  const phoneInputHandler = e => {
-    let v = getNumbersValue(e.target);
-
-    if (!v) return (e.target.value = "");
-    if (~["7", "8", "9"].indexOf(v[0])) {
-      switch (v[0]) {
-        case "9": {
-          e.target.value = `+7 ${v}`;
-          break;
-        }
-        case "7": {
-          e.target.value = `+7 ${v}`;
-          break;
-        }
-        case "8": {
-          break;
-        }
-      }
-    }
-  };
-
-  for (const phone of phoneInputs) {
-    phone.addEventListener("input", phoneInputHandler);
-  }
-});
