@@ -1,5 +1,5 @@
 //
-header.header {
+.header {
   margin: 5px 0;
   padding: 1px 15px;
   display: flex;
@@ -12,6 +12,7 @@ header.header {
   background: #ffffff;
 
   & .navbar {
+    padding: 5px 10px 5px 19px;
     display: flex;
     justify-content: space-between;
     align-items: center;
